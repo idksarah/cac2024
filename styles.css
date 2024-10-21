@@ -2,6 +2,13 @@ html {
     overflow:   scroll;
 }
 
+
+
+:root {
+    touch-action: pan-x pan-y;
+    height: 100% 
+  }
+
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
@@ -16,15 +23,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffeddd;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    scrollbar-width: none;
-    background-image: url("./img/homeBackground.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 150vh;
-    margin-left: auto;
-    margin-right: auto;
+    cursor: url('./cursor/Normal\ Select.cur'), auto;
+}
+
+.cursorHighlight {
+    cursor: url('./cursor/Text\ Select.cur');
 }
 
 .text {
@@ -36,6 +39,13 @@ body {
 
 .content {
     width: 70em;
+    height: 150vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scrollbar-width: none;
 }
 .colorblynd{
     font-size: 4em;
@@ -51,17 +61,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 2em;
+    padding-top: 5em;
 }
 
 .midRow {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%; 
-    height: 100vh;
-    margin-top: 0; 
+    margin-top: -10em; 
 }
 
 .CBIntro {
@@ -74,11 +82,11 @@ body {
 }
 
 .paraOne {
-    margin-top: 25vh;
+    margin-top: 10.5em;
 }
 
 .paraTwo {
-    margin-top: 180px;
+    margin-top: 6em;
 }
 
 .startButton {
@@ -97,6 +105,61 @@ body {
 
 .start {
     font-style: italic;
-    position: absolute;
     transform: translate(0, -20%);
+}
+
+.hidden {
+    opacity: 3.5%;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.blackSwirl {
+    height:8em;
+    transform: translate(24em, -2em); 
+}
+
+.greenSwirl{   
+    height:5em;
+    transform: translate(-27em, 93em); 
+}
+
+.pinkQuad{   
+    height:5em;
+    transform: translate(12em, 92em); 
+}
+
+.hiddenHidden{
+    visibility: hidden;
+}
+
+.yellowBox{   
+    height:13em;
+    transform: translate(-32em, 2em); 
+}
+.greenQuad{   
+    height:4em;
+    transform: translate(30em, 10em); 
+}
+
+.blackSwirl2{   
+    height:6em;
+    transform: translate(0, 40em); 
+}
+
+.yellowTriangles{   
+    height:7em;
+    transform: translate(-30em, 40em); 
+}
+
+.greenTriangles{   
+    height:16em;
+    transform: translate(-27em, 72em); 
+}
+
+.blackSwirl3 {
+    height: 15em;
+    transform: translate(27em, 68em); 
 }
