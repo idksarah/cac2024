@@ -1,0 +1,70 @@
+.text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 1.3em;
+  }
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+.oldPrice {
+    color: rgb(77, 44, 54);
+}
+
+.buy {
+    padding: .5em 3em .5em 3em;
+    border-radius: 20px;
+    border-width: 0;
+    background-color: pink;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.link {
+    color:rgb(89, 146, 128);
+    cursor: pointer;
+    font-size: .8em;
+}
+
+.currentPrice {
+    color: rgb(126, 54, 76);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.payment {
+    position: absolute;
+    width: 30em;
+    background-color: rgb(254, 252, 253);
+    padding: 2em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.paymentText {
+    font-size: 2em;
+}
+
+.thanks {
+    padding: .5em 3em .5em 3em;
+    border-radius: 20px;
+    border-width: 0;
+    background-color: pink;
+    cursor: pointer;
+}
+
+.hint {
+    position: absolute;
+    transform: translate(0em, 32em); 
+    opacity: 50%;
+}

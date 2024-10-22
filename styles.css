@@ -2,8 +2,6 @@ html {
     overflow:   scroll;
 }
 
-
-
 :root {
     touch-action: pan-x pan-y;
     height: 100% 
@@ -11,7 +9,7 @@ html {
 
 ::-webkit-scrollbar {
     width: 0px;
-    background: transparent; /* make scrollbar transparent */
+    background: transparent; 
 }
 
 body {

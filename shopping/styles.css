@@ -1,0 +1,167 @@
+.text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 1.3em;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+html {
+    overflow: scroll;
+}
+
+:root {
+    touch-action: pan-x pan-y;
+    height: 100% 
+  }
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+
+.content {
+    width: 60em;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-image: url('./../img/homeBackgroundTritanopia.png');
+    padding-top: 25em;
+}
+
+
+body {
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    min-width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #ffeaf8;
+    cursor: url('./../cursor/Normal\ Select.cur'), auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 40em;
+    margin: 0 auto;
+}
+
+.messageRow {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.theirMessage {
+    background-color: #524e4b;
+    padding: .5em;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    margin-right: auto;
+}
+
+.urMessage {
+    background-color: #616b4f;
+    padding: .5em;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+.urText, .theirText {
+    color: rgb(238, 235, 235);
+    margin: 0;
+}
+
+.name {
+    font-size: 1em;
+    margin: 0;
+    color: #8d8355;
+}
+
+
+.loadingMessage {
+    opacity: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45vh;
+    position: absolute;
+}
+
+.sixtyOpacity {
+    opacity: 60%;
+}
+
+.loadingMessageIcon {
+    height: 5em;
+}
+
+.loading {
+    text-align: center;
+}
+.typingSpace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    width: 42em;
+    background-color: #524e4b;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 10px;
+}
+
+.typeAMessageForm {
+    display: flex;
+    width: 40em;
+}
+
+.typeAMessageInput {
+    flex-grow: 1;
+    padding: .5em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: .5em;
+}
+
+.sendMessageButton {
+    padding: .5em 1em;
+    font-size: 1.2em;
+    background-color: #616b4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sendMessageButton:hover {
+    background-color: #4a5842;
+}
+
+.link {
+    color:rgb(89, 146, 128);
+    cursor: pointer;
+}
+
+.clickedLink{
+    color:rgb(112, 132, 126);
+    cursor: pointer;
+}

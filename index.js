@@ -13,5 +13,5 @@ poppers.forEach(function (element) {
     });
 });
 startButton.addEventListener("click", function () {
-    window.location.href = './aboutUs/index.html';
+    window.location.href = './shopping/index.html';
 });
