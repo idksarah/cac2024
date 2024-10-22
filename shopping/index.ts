@@ -6,6 +6,7 @@ const messageThree = document.querySelector<HTMLDivElement>('.messageThree');
 const messageFour = document.querySelector<HTMLDivElement>('.messageFour');
 const messageFive = document.querySelector<HTMLDivElement>('.messageFive')!;
 const messageSix = document.querySelector<HTMLDivElement>('.messageSix')!;
+const messageSixContent = document.querySelector<HTMLDivElement>('.messageSixContent')!;
 const typingSpace = document.querySelector<HTMLDivElement>('.typingSpace');
 
 const linkOne = document.querySelector<HTMLSpanElement>('.linkOne');
@@ -66,7 +67,7 @@ document.addEventListener('paste', function () {
     setTimeout(() => {
         messageSix.classList.remove('hidden');
     }, 2000);
-    messageSix.id = 'link';
+    messageSixContent.classList.add('link');
     messageSix.addEventListener('click', () => {
         window.location.href = './../aboutUs/index.html';
     });
@@ -93,7 +94,6 @@ if (!viewedOnce) {
                 }, 3000);
             }, 1500);
         };
-
         setTimeout(showMessages, 1000);
     }, 2000);
 } else {

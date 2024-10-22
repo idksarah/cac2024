@@ -18,5 +18,5 @@ poppers.forEach((element) => {
 })
 
 startButton.addEventListener("click", () => {
-    window.location.href = './shopping/index.html';
+    window.location.href = './amongUs/index.html';
 })
