@@ -13,34 +13,34 @@
 <body>
     <div class="loadingMessage">
         <img class="loadingMessageIcon" src="./../img/message.png">
-        <p class="text loading">Loading into...messages!</p>
+        <p class="text loading">Loading into...<span class="link">messages!</span></p>
     </div>
     <div class="content">
         <div class="main">
-            <div class="messageRow messageOne">
+            <div class="messageRow messageOne hidden">
                 <div class="theirMessage">
                     <p class="name text">sangji</p>
                     <p class="theirText text">hey</p>
                 </div>
             </div>
-            <div class="messageRow messageTwo">
+            <div class="messageRow messageTwo hidden">
                 <div class="theirMessage">
                     <p class="name text">sangji</p>
                     <p class="theirText text">im busy rn but can u pick out + buy a bag for yekta</p>
                 </div>
             </div>
-            <div class="messageRow">
+            <div class="messageRow messageTwoAndaHalf hidden">
                 <div class="urMessage">
                     <p class="urText text">ummmm ok</p>
                 </div>
             </div>
-            <div class="messageRow messageThree">
+            <div class="messageRow messageThree hidden">
                 <div class="theirMessage">
                     <p class="name text">sangji</p>
                     <p class="theirText text">i think u should buy the green one but whatev u think is best</p>
                 </div>
             </div>
-            <div class="messageRow messageFour">
+            <div class="messageRow messageFour hidden">
                 <div class="theirMessage">
                     <p class="name text">sangji</p>
                     <p class="theirText text">links: <span class="link linkOne">https:/bag.comlol</span>
@@ -49,13 +49,24 @@
                     <br><span class="link linkFour">https:/bag/thisisntarealsitebtw</span></p>
                 </div>
             </div>
-        </div><div class="typingSpace">
+            <div class="messageRow hidden messageFive hidden">
+                <div class="urMessage">
+                    <p class="urText text">i bought this one</p>
+                    <img src="./../img/yellowBox.png" class="purse"></img>
+                </div>
+            </div>
+            <div class="messageRow messageSix hidden">
+                <div class="theirMessage">
+                    <p class="name text">sangji</p>
+                    <p class="theirText text">oh my god</p>
+                </div>
+            </div>
+        </div><div class="typingSpace hidden">
             <form class="typeAMessageForm">
                 <input type="text" class="typeAMessageInput text" placeholder="Type a message" />
                 <button type="submit" class="sendMessageButton">Send</button>
             </form>
         </div>
-        
     </div>
 </body>
 </html>

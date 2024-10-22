@@ -37,7 +37,7 @@ html {
     flex-direction: column;
     background-size: cover;
     background-image: url('./../img/homeBackgroundTritanopia.png');
-    padding-top: 25em;
+    padding-top: 15em;
 }
 
 
@@ -120,12 +120,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
+    margin-top: 60em;
     width: 42em;
     background-color: #524e4b;
     padding-top: 1em;
     padding-bottom: 1em;
     border-radius: 10px;
+    position: absolute;
 }
 
 .typeAMessageForm {
@@ -163,5 +164,10 @@ body {
 
 .clickedLink{
     color:rgb(112, 132, 126);
+    cursor: pointer;
+}
+
+#blue {
+    color:rgb(89, 146, 128);
     cursor: pointer;
 }
