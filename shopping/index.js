@@ -6,6 +6,7 @@ var messageThree = document.querySelector('.messageThree');
 var messageFour = document.querySelector('.messageFour');
 var messageFive = document.querySelector('.messageFive');
 var messageSix = document.querySelector('.messageSix');
+var messageSixContent = document.querySelector('.messageSixContent');
 var typingSpace = document.querySelector('.typingSpace');
 var linkOne = document.querySelector('.linkOne');
 var linkTwo = document.querySelector('.linkTwo');
@@ -55,7 +56,7 @@ document.addEventListener('paste', function () {
     setTimeout(function () {
         messageSix.classList.remove('hidden');
     }, 2000);
-    messageSix.id = 'link';
+    messageSixContent.classList.add('link');
     messageSix.addEventListener('click', function () {
         window.location.href = './../aboutUs/index.html';
     });

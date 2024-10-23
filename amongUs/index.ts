@@ -32,10 +32,10 @@ orangeButton.addEventListener('click', ()=> {
                 topRow.classList.remove('hidden');
                 bottomRow.classList.remove('hidden');
                 gameFrame.src="./img/ejection.png";
-                introText.textContent="You were voted out :( Return home?";
+                introText.textContent="You were voted out :( Try texting your friend instead!";
                 introText.classList.add('cursor');
                 introText.addEventListener('click', () => {
-                    window.location.href = './../index.html';
+                    window.location.href = './../shopping/index.html';
                 })
             },2000);
         },2000);

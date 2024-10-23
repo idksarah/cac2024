@@ -1,0 +1,96 @@
+html {
+    overflow:   scroll;
+}
+
+:root {
+    touch-action: pan-x pan-y;
+    height: 100% 
+  }
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+
+body {
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    min-width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #ffeddd;
+    cursor: url('./cursor/Normal\ Select.cur'), auto;
+}
+
+.cursorHighlight {
+    cursor: url('./cursor/Text\ Select.cur');
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8em;
+}
+
+.content {
+    width: 70em;
+    height: 150vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+.colorblynd{
+    font-size: 4em;
+    font-weight: 1000;
+    margin: 0;
+}
+.colorblyndIcon{
+    height: 15em;
+}
+
+.topRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5em;
+}
+
+.midRow {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; 
+    margin-top: -10em; 
+}
+
+.CBIntro {
+    border: solid;
+    border-radius: 30px;
+    padding: 1.7em;
+    width: 23em;
+    box-shadow: 2px 2px 2px 1px rgb(206, 76, 241);
+    text-align: center;
+}
+
+.paraOne {
+    margin-top: 10.5em;
+}
+
+.paraTwo {
+    margin-top: 6em;
+}
+
+.hidden {
+    opacity: 3.5%;
+}
+
+.absolute {
+    position: absolute;
+}
