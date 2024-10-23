@@ -4,14 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <div class="content">
+        <div class="chat hidden">
+            <div class="messageRow messageOne">
+                <div class="theirMessage">
+                    <div>
+                        <img src="./img/greenChar.png" class="character">
+                    </div>
+                    <div>
+                        <p class="name text">sahrawr</p>
+                        <p class="theirText text">blue did it</p>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow messageTwo hidden">
+                <div class="theirMessage">
+                    <div>
+                        <img src="./img/brownChar.png" class="character">
+                    </div>
+                    <div>
+                        <p class="name text">aaaaaarirana</p>
+                        <p class="theirText text">wait no i was with blue the whole time</p>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow messageThree hidden">
+                <div class="theirMessage">
+                    <div>
+                        <img src="./img/orangeChar.png" class="character">
+                    </div>
+                    <div>
+                        <p class="name text">yektaur</p>
+                        <p class="theirText text">bro i.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow messageFour hidden">
+                <div class="theirMessage">
+                    <div>
+                        <img src="./img/orangeChar.png" class="character">
+                    </div>
+                    <div>
+                        <p class="name text">yektaur</p>
+                        <p class="theirText text">blue kept on venting what r u on</p>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow messageFive hidden">
+                <div class="urMessage">
+                    <p class="urText text accusation">i didn't!!! it was</p>
+                    <div>
+                        <img src="./img/blueChar.png" class="character">
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow messageSix hidden">
+                <div class="theirMessage">
+                    <div>
+                        <img src="./img/greenChar.png" class="character">
+                    </div>
+                    <div>
+                        <p class="name text">sahrawr</p>
+                        <p class="theirText text">we all watched orange get cleared at medbay</p>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow messageSeven hidden">
+                <div class="theirMessage">
+                    <div>
+                        <img src="./img/brownChar.png" class="character">
+                    </div>
+                    <div>
+                        <p class="name text">aaaaaarirana</p>
+                        <p class="theirText text">ur cooked lol</p>
+                    </div>
+                </div>
+            </div>
+            <div class="choices hidden">
+                <button class="button red">Red</button>
+                <button class="button you">You</button>
+                <button class="button orange">Orange</button>
+            </div>
+            <div class="typingSpace">
+                <form class="typeAMessageForm">
+                    <input type="text" class="typeAMessageInput text" placeholder="Type a message" />
+                    <button type="submit" class="sendMessageButton">Send</button>
+                </form>
+            </div>
+        </div>
         <div class="topRow">
-            Your playing a video game online when suddenly, your teammate dies! Your job is to report the body to the rest of the crew. 
+            <p class="text introText">
+                Your playing a video game online when suddenly, your teammate dies! Your job is to report the body to the rest of the crew. 
+            </p>
         </div>
         <div class="bottomRow">
-            <img src="./../img/blackSwirl.png">
+            <img class="gameFrame" src="./img/frame1.png">
+            <img src="./img/Emergency_button.png" class="hidden emergencyButton">
         </div>
     </div>
 </body>
