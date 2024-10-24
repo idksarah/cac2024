@@ -190,3 +190,21 @@ body {
 .absolute {
     position: absolute;
 }
+
+.loadingMessage {
+    opacity: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40vh;
+    position: absolute;
+}
+
+.loadingMessageIcon {
+    height: 7em;
+}
+
+.link {
+    color:rgb(89, 146, 128);
+    cursor: pointer;
+}

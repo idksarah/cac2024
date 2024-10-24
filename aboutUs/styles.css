@@ -20,7 +20,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #ffeddd;
+    background-color: #e1e1e1;
     cursor: url('./cursor/Normal\ Select.cur'), auto;
 }
 
@@ -35,16 +35,6 @@ body {
   font-size: 1.8em;
 }
 
-.content {
-    width: 70em;
-    height: 150vh;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: cover;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    scrollbar-width: none;
-}
 .colorblynd{
     font-size: 4em;
     font-weight: 1000;
@@ -93,4 +83,33 @@ body {
 
 .absolute {
     position: absolute;
+}
+
+.link {
+    color:rgb(89, 146, 128);
+    cursor: pointer;
+}
+
+.background{
+    width: 90vw;
+    margin-top: -200px;
+}
+
+.title {
+    position: absolute;
+    width: 1100px;
+    margin-top: 280px;
+    font-size: 5.5em;
+    margin-left: 450px;
+}
+
+.intro {
+    position: absolute;
+    width: 1100px;
+    margin-top: 650px;
+    margin-left: 70px;
+}
+
+.color {
+    color:blueviolet;
 }

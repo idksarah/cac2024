@@ -80,3 +80,7 @@ body {
     background-color: #ffeaf8;
     cursor: url('./../../cursor/Normal\ Select.cur'), auto;
 }
+
+.image {
+    height: 20em;
+}

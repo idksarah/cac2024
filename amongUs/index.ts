@@ -20,65 +20,75 @@ const redButton = document.querySelector<HTMLButtonElement>('.red')!;
 const youButton = document.querySelector<HTMLButtonElement>('.you')!;
 const orangeButton = document.querySelector<HTMLButtonElement>('.orange')!;
 
-orangeButton.addEventListener('click', ()=> {
-    accusation.textContent += " orange";
-    setTimeout(()=> {
-        choices?.classList.add('hidden');
-        messageSix?.classList.remove('hidden');
-        setTimeout(()=> {
-            messageSeven?.classList.remove('hidden');
-            setTimeout(()=> {
-                chat.classList.add('hidden');
-                topRow.classList.remove('hidden');
-                bottomRow.classList.remove('hidden');
-                gameFrame.src="./img/ejection.png";
-                introText.textContent="You were voted out :( Try texting your friend instead!";
-                introText.classList.add('cursor');
-                introText.addEventListener('click', () => {
-                    window.location.href = './../shopping/index.html';
-                })
-            },2000);
-        },2000);
-    },1500);
-});
+const loadingMessage = document.querySelector<HTMLDivElement>('.loadingMessage')!;
+const content = document.querySelector<HTMLDivElement>('.content')!;
 
 setTimeout(()=> {
-    setTimeout(() => {
-        gameFrame.src="./img/frame3.png";
-        setTimeout(() => {
-            gameFrame.src="./img/frame4.png";
-            emergencyButton.classList.remove('hidden');
-            emergencyButton.addEventListener("click", () => {
-                emergencyButton.classList.add('hidden');
-                setTimeout(() => {
-                    gameFrame.src="./img/frame5.png";
-                    setTimeout(() => {
-                        gameFrame.src="./img/frame6.png";
-                        setTimeout(()=>{
-                            topRow.classList.add('hidden');
-                            bottomRow.classList.add('hidden');
-                            chat.classList.remove('hidden');
-                            setTimeout(()=>{
-                                messageTwo?.classList.remove('hidden');
-                                setTimeout(()=>{
-                                    messageThree?.classList.remove('hidden');
-                                    setTimeout(()=> {
-                                        messageFour?.classList.remove('hidden');
-                                        setTimeout(()=>{
-                                            messageFive?.classList.remove('hidden');
-                                            setTimeout(()=> {
-                                                typingSpace?.classList.add('hidden', 'absolute');
-                                                choices?.classList.remove('hidden');
-                                            },1500);
-                                        },2000)
-                                    },700);
-                                },1500);
-                            },1000);
-                        },2000)
+    setTimeout(()=> {
+        loadingMessage.classList.add('hidden');
+        content.classList.remove('hidden');
+            
+    orangeButton.addEventListener('click', ()=> {
+        accusation.textContent += " orange";
+        setTimeout(()=> {
+            choices?.classList.add('hidden');
+            messageSix?.classList.remove('hidden');
+            setTimeout(()=> {
+                messageSeven?.classList.remove('hidden');
+                setTimeout(()=> {
+                    chat.classList.add('hidden');
+                    topRow.classList.remove('hidden');
+                    bottomRow.classList.remove('hidden');
+                    gameFrame.src="./img/ejection.png";
+                    introText.innerHTML = 'You were voted out :( <span class="link">Text your friend instead!</span>';
+                    introText.classList.add('cursor');
+                    introText.addEventListener('click', () => {
+                        window.location.href = './../shopping/index.html';
                     })
-                },4000);
-            })
+                },2000);
+            },2000);
+        },1500);
+    });
+
+    setTimeout(()=> {
+        setTimeout(() => {
+            gameFrame.src="./img/frame3.png";
+            setTimeout(() => {
+                gameFrame.src="./img/frame4.png";
+                emergencyButton.classList.remove('hidden');
+                emergencyButton.addEventListener("click", () => {
+                    emergencyButton.classList.add('hidden');
+                    setTimeout(() => {
+                        gameFrame.src="./img/frame5.png";
+                        setTimeout(() => {
+                            gameFrame.src="./img/frame6.png";
+                            setTimeout(()=>{
+                                topRow.classList.add('hidden');
+                                bottomRow.classList.add('hidden');
+                                chat.classList.remove('hidden');
+                                setTimeout(()=>{
+                                    messageTwo?.classList.remove('hidden');
+                                    setTimeout(()=>{
+                                        messageThree?.classList.remove('hidden');
+                                        setTimeout(()=> {
+                                            messageFour?.classList.remove('hidden');
+                                            setTimeout(()=>{
+                                                messageFive?.classList.remove('hidden');
+                                                setTimeout(()=> {
+                                                    typingSpace?.classList.add('hidden', 'absolute');
+                                                    choices?.classList.remove('hidden');
+                                                },1500);
+                                            },2000)
+                                        },700);
+                                    },1500);
+                                },1000);
+                            },2000)
+                        })
+                    },4000);
+                })
+            }, 2000);
         }, 2000);
-    }, 2000);
-    gameFrame.src="./img/frame2.png";
-},2000);
+        gameFrame.src="./img/frame2.png";
+        },2000);
+    },2000)
+},2000)
